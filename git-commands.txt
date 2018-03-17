@@ -1,0 +1,5 @@
+-------- Git commands --------
+git init - to create/init a new repo in local FS
+git remote add origin git-repo-URL - upload a newly create repo to the remote storage/cloud
+git remote -v - to verify a remote URL
+

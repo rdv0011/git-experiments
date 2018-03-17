@@ -1,0 +1,32 @@
+w - moves to the next  word in the line
+b - moves to the previous word in the line
+o - move cursor below the current line and switch to the editing mode
+i - switches to the editing mode at the current cursor position
+a - moves cursor to the next position and switches to the editing mode
+0 - moves to the end of the line
+shift_$ - moves to the beginning of the line
+[[ or :0 - moves to the first line in the file
+]] or shift_0 - move to the end of the file
+
+yy - copy a current line to the buffer
+p - paste the line from the buffer
+dw - delete a single word
+D - delete the reminder of the line
+dd - delete an entire line
+Ndd - delete next N lines
+u - undo the previous operation
+
+:?__string_to_search__ - searches for a specified string
+n - search to the next occurrence
+N - search to the previous occurrence
+
+z= - being at the location for an incorrect word shows auto completion list
+[s - moves to the previous incorrect word
+]s - moves to the next incorrect word
+^g - shows the current line
+
+w - save the file to the FS
+w! - writes an existing content over pre-existing one in the FS
+q - exit the editor
+q! - exit without saving
+wq - writes to the FS and exits from the editor
