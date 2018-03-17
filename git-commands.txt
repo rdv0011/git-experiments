@@ -2,4 +2,25 @@
 git init - to create/init a new repo in local FS
 git remote add origin git-repo-URL - upload a newly create repo to the remote storage/cloud
 git remote -v - to verify a remote URL
+git checkout -b __branch_name__  - creates and switches to a new branch  
+git push
+git checkout --ours path/file - to accept local changes when merging
+git commit --amend - overwrite the previous commit with changing a commit message
+git add path/file - to add a file to a commit or to mark it resolved during a merge
+git cherry-pick __commit_hash__ - pick one particular changeset and applies it
+    An example of usage:
+    git checkout release
+    git cherry-pick dev~2 # ~2 here means to take a second before the last 
 
+git rebase -i - does an interactive rebase
+    An example how to use it:
+    1) create a branch b1 and commit a feature f1
+    2) create a second branch b2 on top of it and commit a feature f2
+    3) switch to the branch b1 and make several changes in different commits
+    4) switch back to the b2 and do an interactive re-base against a master branch:
+       -> git rebase -i master
+    5) during an interactive re-base several commits made on step 3) might be melted into one
+    6) the final change-set history will contain two branches with one change-set in each 
+
+git branch --merge - shows the branches which are merge into the current
+git branch --delete --remote __branch_name__ - deletes the local and remote branch
