@@ -30,3 +30,4 @@ w! - writes an existing content over pre-existing one in the FS
 q - exit the editor
 q! - exit without saving
 wq - writes to the FS and exits from the editor
+:r __file_name__ - reads file with the name and insert its content after a current line
